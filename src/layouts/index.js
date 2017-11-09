@@ -1,62 +1,22 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import Helmet from 'react-helmet';
-import TopLoginBar from '../pages/components/topLoginBar';
+import TopLoginBar from '../components/topLoginBar';
 import NavBar from './navbar.js';
-import { homepageHeaderStyle } from '../constants/homepageStyleObjects';
 
 import './index.css';
+import './main.css';
 
-const Header = () => (
-  <div style={{
-    ...homepageHeaderStyle
-  }}>
-    <TopLoginBar />
-  </div>
-);
-
-//
-// DEFAULT HEADER
-//
-// const Header = () => (
-//   <div
-//     style={{
-//       background: '#DDDDDD',
-//       marginBottom: '1.45rem',
-//     }}
-//   >
-//     <div
-//       style={{
-//         margin: '0 auto',
-//         maxWidth: 960,
-//         padding: '1.45rem 1.0875rem',
-//       }}
-//     >
-//       <h1 style={{ margin: 0 }}>
-//         <Link
-//           to="/"
-//           style={{
-//             color: 'white',
-//             textDecoration: 'none',
-//           }}
-//         >
-//           Gatsby
-//         </Link>
-//       </h1>
-//     </div>
-//   </div>
-// );
-
-const TemplateWrapper = ({ children }) => (
+const TemplateWrapper = ({ children, data }) => (
   <div>
     <Helmet
-      title="Gatsby Default Starter"
+      title={data.site.siteMetadata.title}
       meta={[
         { name: 'description', content: 'Sample' },
         { name: 'keywords', content: 'sample, something' },
       ]}
     />
-    <Header />
+    <TopLoginBar data={data} />
     <div
       style={{
         margin: '0 auto',
@@ -76,3 +36,13 @@ TemplateWrapper.propTypes = {
 };
 
 export default TemplateWrapper
+
+export const query = graphql`
+  query IndexLayoutQuery {
+    site {
+      siteMetadata {
+        title
+      }
+    }
+  }
+`;

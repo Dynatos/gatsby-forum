@@ -1,0 +1,150 @@
+@media only screen and (max-width: 720px) {
+    .homepage-title-text-and-login-form {
+        height: 12vh;
+    }
+
+    .login-title-text {
+        width: 100%;
+        font-size: 5vw;
+        padding-top: 5px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .login-form-parent {
+        justify-content: flex-start;
+        margin: 5px auto;
+    }
+
+    .login-anchor-signup-recover-parent {
+        width: 100px;
+        height: 40px;
+    }
+
+    .login-text-link-style {
+        width: 50px;
+        height: 20px;
+    }
+}
+
+@media only screen and (min-width: 720px) and (max-height: 992px) {
+    .homepage-title-text-and-login-form {
+        display: flex;
+        height: 9vh;
+    }
+
+    .login-title-text {
+        max-width: 40%;
+        font-size: 3.5vw;
+    }
+
+    .login-form-parent {
+        justify-content: flex-end;
+        margin: auto;
+    }
+
+    .login-anchor-signup-recover-parent {
+        width: 60px;
+        height: 40px;
+    }
+
+    .login-text-link-style {
+        width: 50px;
+        height: 20px;
+    }
+}
+
+@media only screen and (min-width: 993px) {
+    .homepage-title-text-and-login-form {
+        display: flex;
+        height: 7.5vh;
+    }
+
+    .login-title-text {
+        max-width: 40%;
+        font-size: 3vw;
+    }
+
+    .login-form-parent {
+        justify-content: flex-end;
+        margin: auto;
+    }
+
+    .login-anchor-signup-recover-parent {
+        width: 60px;
+        height: 40px;
+    }
+
+    .login-text-link-style {
+        width: 50px;
+        height: 20px;
+    }
+}
+
+@media only screen and (min-width: 2000px) {
+    .login-title-text {
+        font-size: 66px;
+    }
+}
+
+.homepage-title-text-and-login-form {
+    width: 100%;
+    background-color: lightblue;
+    border-bottom: 2px solid darkred;
+}
+
+.login-title-text {
+    color: darkred;
+    margin: auto;
+}
+
+.login-form-parent {
+    width: 293px;
+    height: 48px;
+    font: menu;
+    display: flex;
+}
+
+.login-form {
+    padding: 0;
+    margin: auto 12px auto 0;
+}
+
+.login-box-style {
+    width: 240px;
+    height: 24px;
+    font: menu;
+}
+
+.login-box-input-style {
+    width: 100%;
+    height: 100%;
+    border: 1px solid darkred;
+    background-color: #AAAAAA;
+    padding: 0 3px;
+    font: menu;
+}
+
+.login-accept-button-style {
+    box-sizing: border-box;
+    width: 48px;
+    height: 20px;
+    max-height: 20px;
+    margin: auto 0 auto 5px;
+    padding: 0;
+    background-color: #EEEEEE;
+    font: menu;
+    font-size: 12px;
+    border: 1px solid black;
+}
+
+.login-anchor-signup-recover-parent {
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.login-text-link-style {
+    margin: 0 auto;
+    font-size: 12px;
+}
